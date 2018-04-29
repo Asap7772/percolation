@@ -1,22 +1,29 @@
 <html>
 <head>
-  <title>Percolation by Groundwater</title>
+  <title>Percolation by Rainwater into Soil</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
+  <div class="container">
   <div class="jumbotron">
-    <h1> Percolation Model </h1>
-    <h3>This website will be modeling the process of percolation, the process of a
-      fluid slowly traveling through a porous material. </h3>
-      <form method="POST" action="/submit">
-        Size of Matrix Model:<br>
-        <input type="text" name="matrixSize" value="10">
-        <br>
-        Site vacancy probability:<br>
-        <input type="text" name="probability" value="0.5">
-        <br><br>
-        <input type="submit" value="Submit">
-      </form>
-    </div>
-  </body>
-  </html>
+  <h1> Percolation Model </h1>
+  <h3>This website will be modeling the process of percolation, the process of a
+     fluid slowly traveling through a porous material. </h3>
+  <form method="POST" action="/submit">
+    Size of Matrix Model:<br>
+    <input type="text" name="matrixSize" value="10">
+    <br>
+    Site vacancy probability:<br>
+    <input type="text" name="probability" value="0.5">
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+  </div>
+  </div>
+</body>
+</html>
