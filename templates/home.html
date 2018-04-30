@@ -1,12 +1,7 @@
-<html>
-<head>
-  <title>Percolation by Rainwater into Soil</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
+{% extends "base.html" %}
+
+{% block customstyles %}  
+<style>
     .footer {
        position: fixed;
        left: 0;
@@ -17,12 +12,13 @@
        text-align: center;
     }
   </style>
-</head>
+{% endblock %}
 
-<body>
-  <div class="container">
-  <div class="jumbotron">
-  <h1> Percolation Model </h1>
+
+{% block content %}
+
+
+<h1> Percolation Model </h1>
   <h3>This website will be modeling the process of percolation, the process of a
      fluid slowly traveling through a porous material. </h3>
   <form method="POST" action="/submit">
@@ -37,7 +33,10 @@
   </div>
   </div>
   <div class="footer">
-  <p>Made by Anikait Singh for AP CSP Create Task</p>
-  </div>
-</body>
-</html>
+  <p>Made by Anikait Singh for AP CSP Create Task. &copy; 2018 Anikait Singh</p>
+
+{% endblock %}
+
+
+  
+
