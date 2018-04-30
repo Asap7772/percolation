@@ -1,19 +1,9 @@
-<html>
-<script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
-<script type="text/javascript" src="http://mpld3.github.io/js/mpld3.v0.1.js"></script>
-<head>
-  <title>Percolation by Rainwater into Soil</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
 
-<body>
-  <div class="container">
-  <div class="jumbotron">
-  <h1> Percolation Model </h1>
+{% extends "base.html" %}
+ 
+{% block content %}
+
+<h1> Percolation Model </h1>
   <h2> This is the model you requested: </h3>
     <ul>
       <li> <h3> size = {{size}} </h3> </li>
@@ -24,7 +14,7 @@
     <h3> Plot: Groundwater Model of earth sample with Water Table Modeled </h3>
 
     {{plot|safe}}
-  </div>
-  </div>
-</body>
-</html>
+  
+
+{% endblock %}
+  

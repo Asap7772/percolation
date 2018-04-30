@@ -6,15 +6,12 @@ from Percolation import Percolation
 import matplotlib.pyplot as plt, mpld3
 import matplotlib as mpl
 
-n = 0;
-p = 0;
-perc = None;
-
 app = Flask(__name__)
 
 @app.route('/')
 def home():
     return render_template('home.html')
+
 
 @app.route('/submit', methods=['POST'])
 def my_form_size():
